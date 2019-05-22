@@ -86,7 +86,7 @@ On the left side of the equation we have moved every term that can be computed. 
 by using the approximate receiver position information. On the right hand side we have the unknowns (dX, dY, dZ, dtR) and their coefficients. Based on the linearized
 pseudorange equation one can form the observation matrix (H).
 
-*Practical advise: Take care that the unknowns from the linearized pseudorange equations are not the same as the position related unknowns that we are estimating directly in the EKF state vector. Check the GNSS Compare code ( e.g.,* ``StaticExtendedKalmanFilter`` *class ) to understand how this is handled*.
+*Practical advice: Take care that the unknowns from the linearized pseudorange equations are not the same as the position related unknowns that we are estimating directly in the EKF state vector. Check the GNSS Compare code ( e.g.,* ``StaticExtendedKalmanFilter`` *class ) to understand how this is handled*.
 
 Good, now we can see how the EKF was implemented for the *static user* and the *dynamic user*!
 
@@ -145,7 +145,7 @@ In the above expression the receiver clock related parameters are expressed as:
   S_f \approx \frac{h_0}{2}.
 
 The parameter h-2 and h0 are the Power Spectral Densities (PSD) of the random walk frequency noise and of the white noise, as defined in the suggested book above. Some typical values for a low quality Temperature
-Compensated Crystal Oscillator (TCXO) are 2e-20 and 2e-19 (in seconds). A practical advise before using this values
+Compensated Crystal Oscillator (TCXO) are 2e-20 and 2e-19 (in seconds). A practical advice before using this values
 is to take care that we are dealing with the parameters of a variance-covariance matrix and also that they have
 to be converted in units of meters (remember that we have expressed the receiver clock states in units of meters).
 
@@ -200,7 +200,7 @@ modifying the values in Q and R experimentally (i.e., trial and error). Just as 
 implementing *adaptive* estimators. Who knows, maybe you (the reader) will decide to implement some nice ideas now that
 this possibility is enabled with *GNSS Compare's* flexible framework.
 
-*Practical advise: When the observation matrix (H) is being built do consider that it's size is defined in the following way:
+*Practical advice: When the observation matrix (H) is being built do consider that it's size is defined in the following way:
 the number of rows is the number of measurements and the number of columns is the number of unknowns. Therefore when
 switching from the static case to the dynamic case, H changes also. We mention this just to be sure that a possible conceptual hiccup
 is avoided.*
@@ -325,4 +325,4 @@ To estimate the vector of unknowns (x) in the WLS sense, we proceed in the follo
 .. math::
   \hat{\mathbf{x}}_{\text{WLS}} = \left(\mathbf{H}^{\text{T}} \mathbf{W} \mathbf{H} \right)^{-1}\mathbf{H}^{\text{T}} \mathbf{W} \mathbf{z}.
 
-*Practical advise: In the WLS case, as the position is concerned, we are estimating the difference between the approximated position and the true position until this difference is below a certain threshold. We encourage you to check the*    ``WeightedLeastSquares``  *class to see how this is handled.*
+*Practical advice: In the WLS case, as the position is concerned, we are estimating the difference between the approximated position and the true position until this difference is below a certain threshold. We encourage you to check the*    ``WeightedLeastSquares``  *class to see how this is handled.*

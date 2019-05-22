@@ -179,7 +179,7 @@ new process noise matrix. Which is exactly what we are going to do next, therefo
 
 
 For the process noise matrix we use the approach presented in the book of Robert Grover Brown and Patrick Y. C. Hwang
-( *Introduction to Random Signals and Applied Kalman Filtering* ). Indeed, is the third time we refer to this book in the implemented PVT algorithms section, however you can trust us that is a very good one!
+( *Introduction to Random Signals and Applied Kalman Filtering* ). Indeed, it is the third time we refer to this book in the implemented PVT algorithms section, however you can trust us that it is a very good one!
 
 .. math::
   \mathbf{Q}_k =

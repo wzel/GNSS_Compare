@@ -39,7 +39,7 @@ We have the time prediction of the state vector (x) and it's variance-covariance
   \mathbf{P}^-_k = \mathbf{F}_k \mathbf{P}^+_{k-1} \mathbf{F}^{\text{T}}_k + \mathbf{Q}_k .
 
 In the next step we can compute the innovation vector (gamma) and it's variance-covariance matrix (S) with the help of
-the obsevation vector (z), the observation matrix (H) and the measurement noise matrix (R):
+the observation vector (z), the observation matrix (H) and the measurement noise matrix (R):
 
 .. math::
   \boldsymbol{\gamma}_k = \mathbf{z}_k - \mathbf{H}_k\hat{\mathbf{x}}^-_k

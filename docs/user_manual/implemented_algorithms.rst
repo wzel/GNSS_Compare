@@ -272,7 +272,7 @@ Finally we have arrived at the final case regarding the tunning of the dynamic E
 Weighted Least Squares
 ======================
 
-*GNSS Compare* offers also the possibility to change the PVT estimator if the user whishes so. By not requiring knowledge about
+*GNSS Compare* offers also the possibility to change the PVT estimator if the user wishes to. By not requiring knowledge about
 the dynamics, Weighted Least Squares (WLS) can be used to estimate the position using only the pseudorange measurements. However there
 are some drawbacks like: the quality of the estimations fully depends on the quality of the measurements and also the WLS
 requires a minimum number of measurements (typically 4 if we want to estimate the 3D position and the receiver clock bias).

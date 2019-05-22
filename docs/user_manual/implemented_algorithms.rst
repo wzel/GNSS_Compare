@@ -277,7 +277,7 @@ the dynamics, Weighted Least Squares (WLS) can be used to estimate the position 
 are some drawbacks like: the quality of the estimations fully depends on the quality of the measurements and also the WLS
 requires a minimum number of measurements (typically 4 if we want to estimate the 3D position and the receiver clock bias).
 
-Nevertheless is useful to have such an estimator as its behavior can be studied in real-time/post-processing in comparison with an EKF.
+Nevertheless it is useful to have such an estimator as its behavior can be studied in real-time/post-processing in comparison with an EKF.
 And all this thanks to *GNSS Compare*!
 
 Although the pseudorange measurement model was presented in the EKF description we will do it one more time just for the

@@ -195,7 +195,7 @@ For the process noise matrix we use the approach presented in the book of Robert
    \end{pmatrix}
 
 The parameters Sx, Sy and Sz are the spectral amplitudes that reflect the position random process. Unfortunately, setting their values
-is not as straigth forward as for the receiver clock states. We have to rely on what we call the *tunning* process which is
+is not as straightforward as for the receiver clock states. We have to rely on what we call the *tunning* process which is
 modifying the values in Q and R experimentally (i.e., trial and error). Just as a note, this can be avoided by designing and
 implementing *adaptive* estimators. Who knows, maybe you (the reader) will decide to implement some nice ideas now that
 this possibility is enabled with *GNSS Compare's* flexible framework.

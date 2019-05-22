@@ -214,7 +214,7 @@ is tunned to our situation.
 
 Let's start with the R matrix. We set R to be a diagonal matrix containing the variances of each pseudorange measurement.
 The measurement noise matrix being diagonal relies on the assumption that there is no cross-correlation between the measurements
-coming from different satellites ( *an assumption that is not entirely represeting the reality, however it fits most of the
+coming from different satellites ( *an assumption that is not entirely representing the reality, however it fits most of the
 applications* ). Therefore, the diagonal elements of the R matrix are:
 
 .. math::

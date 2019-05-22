@@ -280,7 +280,7 @@ requires a minimum number of measurements (typically 4 if we want to estimate th
 Nevertheless is useful to have such an estimator as its behavior can be studied in real-time/post-processing in comparison with an EKF.
 And all this thanks to *GNSS Compare*!
 
-Altough the pseudorange measurement model was presented in the EKF description we will do it one more time just for the
+Although the pseudorange measurement model was presented in the EKF description we will do it one more time just for the
 sake of completion.
 
 Pseudorange measurement model

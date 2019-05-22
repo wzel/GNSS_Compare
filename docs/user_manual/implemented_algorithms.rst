@@ -60,7 +60,7 @@ Finally the measurement update step is:
 
 However, before explaining how the EKF for the *static user* and the *dynamic user* was implemented, we still
 need to talk about the measurement model based on the GNSS pseudoranges retrieved from the smartphone's GNSS
-receiver. If you are familiar with this concepts, you can skip the following section.
+receiver. If you are familiar with these concepts, you can skip the following section.
 
 Pseudorange measurement model
 -----------------------------
